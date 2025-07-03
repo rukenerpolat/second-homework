@@ -160,8 +160,3 @@ Ruken ERPOLAT </em></b>
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-827a67?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/rukenerpolat)
 [![Medium](https://img.shields.io/badge/-Medium-827a67?style=flat&logo=medium&logoColor=white)](https://medium.com/@rukenerpolat)
-
-
-<br>
-
-<img src="https://media.giphy.com/media/FcqKy4Kj7XOK0hCW4g/giphy.gif"/>

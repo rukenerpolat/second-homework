@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --color-white: #FFFFFF;
+    --color-grey: #F7F9FA;
+    --color-dark: #18181B;
+    --color-dark-grey: #ccc;
+    --color-blue: #0A2ECC;
+    --color-light-blue: #F3F8FF;
+}
+
+body {
+    background-color: var(--color-light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    /* text-align: center; */
+}
+
+p {
+    color: var(--color-dark);
+}
+
+/* form a {
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+form a:hover {
+    text-decoration: underline;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--color-blue);
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(48, 82, 234);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}

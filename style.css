@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
     --color-white: #FFFFFF;
-    --color-grey: #F7F9FA;
     --color-dark: #18181B;
     --color-dark-grey: #ccc;
     --color-blue: #0A2ECC;
@@ -11,12 +10,12 @@
 
 body {
     background-color: var(--color-light-blue);
+    font-family: "Figtree", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .form-container {
@@ -28,24 +27,10 @@ body {
     max-width: 400px;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-dark);
-    /* text-align: center; */
-}
-
+h1,
 p {
     color: var(--color-dark);
 }
-
-/* form a {
-    text-decoration: none;
-    color: var(--color-grey);
-}
-
-form a:hover {
-    text-decoration: underline;
-} */
 
 input[type="text"],
 input[type="email"],
@@ -53,11 +38,10 @@ input[type="password"] {
     width: 100%;
     margin: 5px 0;
     padding: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border: 1px solid var(--color-dark-grey);
     border-radius: 5px;
     box-sizing: border-box;
-    transition: border-color 0.3s;
 }
 
 input[type="text"]:focus,
@@ -68,15 +52,15 @@ input[type="password"]:focus {
 }
 
 button[type="submit"] {
-    width: 100%;
-    padding: 12px;
     background-color: var(--color-blue);
     color: var(--color-white);
+    width: 100%;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 button[type="submit"]:hover {
@@ -84,10 +68,27 @@ button[type="submit"]:hover {
 }
 
 input[type="checkbox"] {
-    margin-right: 5px;
+    margin: 0 5px 20px 0px;
 }
 
-p {
-    text-align: center;
-    margin-top: 15px;
+.page-link {
+    color: var(--color-blue);
+    text-decoration: none;
+    padding: 10px 0;
+    position: relative;
+}
+
+.page-link::after {
+    background-color: var(--color-blue);
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.page-link:hover::after {
+    width: 100%;
 }
